@@ -1,0 +1,18 @@
+{% extends 'templates/default.html.twig' %}
+
+{% block body %}
+<table class="table table-striped">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>text</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>{{ article.id }}</td>
+        <td>{{ article.name }}</td>
+        <td>{{ article.text }}</td>
+    </tr>
+</table>
+{% endblock %}

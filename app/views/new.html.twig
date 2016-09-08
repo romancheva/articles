@@ -1,0 +1,13 @@
+{% extends 'templates/default.html.twig' %}
+
+{% block body %}
+    <form method="post" enctype='multipart/form-data'>
+        <input type="file" name="file" />
+        <input type="submit" value="Upload" />
+    </form>
+    <form method="post">
+        Name of the article: <input type="text" name="name"></br>
+        Text: <textarea name="text" rows="20" cols="50">{{ file }}</textarea></br>
+        <input type="submit">
+    </form>
+{% endblock %}
